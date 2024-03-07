@@ -1,7 +1,8 @@
 import React from "react";
 import LeftBar from "../components/LeftBar";
 import Left from "../components/Left";
-
+import RightBar from "../components/RightBar";
+import Right from "../components/Right";
 function InerLayout() {
   return (
     <div className="flex h-full rounded-2xl mx-7 mb-4">
@@ -12,8 +13,12 @@ function InerLayout() {
       <div className="w-4/12 bg-white">
         <Left/>
       </div>
-      <div className="w-5/12 bg-black text-white">right</div>
-      <div className="bg-blue-500 rounded-r-3xl w-2/12">right SideBAr</div>
+      <div className="w-5/12 bg-white text-white ">
+        <Right/>
+      </div>
+      <div className="bg-[#261B43] text-white rounded-r-3xl w-2/12"> 
+       <RightBar/>
+      </div>
     </div>
   );
 }

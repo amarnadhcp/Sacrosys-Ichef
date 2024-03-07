@@ -6,7 +6,7 @@ import InerLayout from "./InerLayout";
 function Layout() {
   return (
     <div className="h-screen w-full flex flex-col">
-      <div className="flex-grow bg-gradient-to-br from-[#FF4F5F] to-[#241046] flex flex-col">
+      <div className="flex-grow bg-gradient-to-br from-[#DE1F61]  via-[#573D8E] to-[#241046]  flex flex-col">
         <Navbar/>
         <InerLayout/>
       </div>

@@ -23,7 +23,7 @@ function Navbar() {
           <img src={notification} alt="Notification" className="w-8 h-8" />
         </div>
 
-        <div className="flex gap-2 font-inter text-sm">
+        <div className="flex gap-2 font-inter md:text-sm text-xs">
           <button className="border-md bg-[#5D9710] rounded-lg px-3 py-1 text-white">
             Dine In
           </button>
