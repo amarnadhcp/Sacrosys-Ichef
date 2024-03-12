@@ -7,35 +7,30 @@ import decrease from "../assets/decrease.svg";
 function Left() {
   return (
     <div className="bg-white flex flex-col  align-top font-poppins h-full border-r-2 border-[#7A2B6E] ">
-      <div className="flex gap-2 ml-8 text-sm">
-        <div className="flex flex-col">
-          <div className="flex items-center">
-            <label className=" text-right pr-1 text-sm">Table:</label>
-            <label className="p-2 flex-grow  ml-2">kjlk</label>
-          </div>
+    
+      <div className="flex gap-2 md:ml-4 text-xs p-2 ">
+        <div className="flex items-center w-1/2">
+          <label className=" text-right  ">Table :</label>
+          <label className="  ml-2">88</label>
         </div>
-        <div className="flex flex-col">
-          <div className="flex items-center">
-            <label className=" text-right pr-1 text-sm">Token:</label>
-            <label className="p-2 flex-grow  ml-2">kjlk</label>
-          </div>
+        <div className="flex items-center w-1/2">
+          <label className=" text-right    ">Staff :</label>
+          <label className="  ml-2">8878</label>
         </div>
       </div>
 
-      <div className="flex gap-2 ml-8 text-sm">
-        <div className="flex flex-col">
-          <div className="flex items-center">
-            <label className=" text-right pr-1 text-sm">Staff:</label>
-            <label className="p-2 flex-grow  ml-2">kjlk</label>
-          </div>
+      <div className="flex gap-2 md:ml-4 text-xs p-2">
+        <div className="flex items-center w-1/2">
+          <label className=" text-right  ">Token :</label>
+          <label className=" flex-grow  ml-2">6589</label>
         </div>
-        <div className="flex flex-col">
-          <div className="flex items-center">
-            <label className=" text-right pr-1 text-sm">Customer:</label>
-            <label className="p-2 flex-grow  ml-2">kjlk</label>
-          </div>
+        <div className="flex items-center w-1/2">
+          <label className=" text-right  ">Customer :</label>
+          <label className=" flex-grow  ml-2">Amar</label>
         </div>
       </div>
+
+      
 
       {/* Table here */}
       <div className="justify-between flex flex-col h-full">
