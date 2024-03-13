@@ -13,10 +13,10 @@ function InerLayout() {
       <div className="w-4/12 bg-white">
         <Left/>
       </div>
-      <div className="w-5/12 bg-white text-white ">
+      <div className="w-5/12 bg-white  ">
         <Right/>
       </div>
-      <div className="bg-[#261B43] text-white rounded-r-3xl w-2/12"> 
+      <div className="bg-[#261B43]  rounded-r-3xl w-2/12"> 
        <RightBar/>
       </div>
     </div>

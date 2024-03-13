@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function RightBar() {
+  
+  const [selectedItem, setSelectedItem] = useState(1);
+
+  const handleItemClick = (index) => {
+    setSelectedItem(index); 
+  };
+
   return (
-    <div className="flex flex-col bg-[#261B43] items-center justify-center text-md text-white font-poppins h-full rounded-r-3xl">
-      <ul className="list-none p-0 flex flex-col justify-center items-center h-full">
-        <li className="py-2 flex-grow mt-3">Favourites</li>
-        <li className="py-2 flex-grow">Starter</li>
-        <li className="py-2 flex-grow">Rice</li>
-        <li className="py-2 flex-grow">Juice</li>
-        <li className="py-2 flex-grow">Buffets & Brunch</li>
-        <li className="py-2 flex-grow">Fried Chicken</li>
-        <li className="py-2 flex-grow">Mojito</li>
-        <li className="py-2 flex-grow">Veg</li>
-        <li className="py-2 flex-grow">Non Veg</li>
-        <li className="py-2 flex-grow">Ice Cream</li>
+    <div className="flex flex-col bg-[#261B43] items-center justify-center  lg:text-md text-white font-poppins h-full rounded-r-3xl">
+      <ul className="list-none p-0 flex flex-col justify-center items-center h-full w-full mb-4 mt-1">
+        {['Favourites', 'Starter', 'Rice', 'Juice', 'Buffets & Brunch', 'Fried Chicken', 'Mojito', 'Veg', 'Non Veg', 'Ice Cream'].map((item, index) => (
+          <li
+            key={index}
+            className={`py-2 flex  flex-grow mt-3 cursor-pointer  w-full rounded-r-full justify-center items-center   text-center ${selectedItem === index ? 'bg-blue-500' : ''} `}
+            onClick={() => handleItemClick(index)}
+          >
+            {item}
+          </li>
+        ))}
       </ul>
     </div>
   );
