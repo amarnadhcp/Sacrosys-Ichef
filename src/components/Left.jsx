@@ -94,7 +94,7 @@ function Left() {
 
           <div className="flex flex-col  mx-2 ">
             <div className="flex mb-2 lg:mb-3 justify-between mx-2 lg:mx-4">
-              <button className=" px-5 lg:px-10 py-1 lg:py-2  rounded-sm  text-[10px] lg:text-sm font-medium text-white bg-gradient-to-br from-[#BADC58] to-[#6AB04C]">
+              <button className=" px-5 lg:px-12 py-1 lg:py-2  rounded-md  text-[10px] lg:text-sm font-medium text-white bg-gradient-to-br from-[#BADC58] to-[#6AB04C]">
                 Pay
               </button>
               <span className="flex text-[#643075] justify-center items-center text-sm lg:text-lg font-bold">
@@ -142,4 +142,5 @@ const data = [
   { id: 1, name: "Chiken Biriyani", quantity: 2, price: 10, total: 20 },
   { id: 2, name: "Fried Chiken", quantity: 1, price: 15, total: 15 },
   { id: 3, name: "Fish Fry", quantity: 3, price: 8, total: 24 },
+  
 ];

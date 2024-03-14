@@ -4,9 +4,9 @@ import searchicon from "../assets/search.svg";
 
 function Right() {
   return (
-    <div className="flex flex-col bg-[#E9E7F2] text-xs text-[#000000] font-poppins h-full overflow-x-auto">
-      <div className="mx-3">
-        <div className="flex justify-end w-full p-1 lg:p-2 mt-2 relative ">
+    <div className=" bg-[#E9E7F2] h-full text-xs text-[#000000] font-poppins  overflow-x-auto ">
+      <div className="mx-2">
+        <div className="flex justify-end w-full p-1 lg:p-2 mt-1 relative ">
           <input
             type="text"
             placeholder="Search Item/code/shortcut"
@@ -20,7 +20,7 @@ function Right() {
         </div>
       </div>
       <div className="mx-3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-2 h-[414px] lg:h-[534px] overflow-y-auto ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mt-1  lg:h-[77vh] overflow-y-auto ">
           {data.map((item) => (
             <div
               key={item.id}
