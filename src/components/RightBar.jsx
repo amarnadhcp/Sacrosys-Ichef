@@ -9,12 +9,12 @@ function RightBar() {
   };
 
   return (
-    <div className="flex flex-col bg-[#261B43] items-center justify-center text-xs lg:text-base text-white font-Mulish font-medium h-full rounded-r-3xl">
+    <div className="flex flex-col bg-[#261B43] items-center justify-center text-xs xl:text-sm text-white font-Mulish font-medium h-full rounded-r-3xl">
       <ul className="list-none p-0 flex flex-col justify-center items-center h-full w-full mb-4 mt-1">
-        {['Favourites', 'STARTER', 'RICE', 'JUICE', 'BUFFETS & BRUNCH', 'FRIED CHIKEN', 'MOJITO', 'VEG', 'NON VEG', 'ICE CREAM'].map((item, index) => (
+        {['FAVOURITES', 'STARTER', 'RICE', 'JUICE', 'BUFFETS & BRUNCH', 'FRIED CHIKEN', 'MOJITO', 'VEG', 'NON VEG', 'ICE CREAM'].map((item, index) => (
           <li
             key={index}
-            className={`py-2 flex  flex-grow mt-3 cursor-pointer  w-full rounded-r-full justify-center items-center   text-center ${selectedItem === index ? 'bg-[#E9E7F2] text-black' : ''} `}
+            className={`py-2 flex  flex-grow mt-3 cursor-pointer  w-full rounded-r-full justify-center items-center   text-center ${selectedItem === index ? 'bg-[#E9E7F2] text-black text-sm lg:text-base' : ''} `}
             onClick={() => handleItemClick(index)}
           >
             {item}
