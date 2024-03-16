@@ -4,13 +4,13 @@ import searchicon from "../assets/search.svg";
 
 function Right() {
   return (
-    <div className=" bg-[#E9E7F2] h-full text-xs text-[#000000] font-poppins  overflow-x-auto ">
+    <div className=" bg-[#E9E7F2] h-full text-xs text-[#000000] font-poppins">
       <div className="mx-2">
-        <div className="flex justify-end w-full p-1 lg:p-2 mt-1 relative ">
+        <div className="flex justify-end w-full p-1 lg:p-2  relative ">
           <input
             type="text"
             placeholder="Search Item/code/shortcut"
-            className="px-2 lg:px-4 py-2 w-1/2 lg:w-2/5 rounded-md text-white border-none outline-none bg-[#52356F]"
+            className="px-1 lg:px-2 py-1 lg:py-2 w-2/3 lg:w-1/2 xl:w-2/5 rounded-md text-white font-light text-[10px] lg:text-[12px] border-none outline-none bg-[#52356F] placeholder-white "
           />
           <img
           src={searchicon}
@@ -20,11 +20,11 @@ function Right() {
         </div>
       </div>
       <div className="mx-3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mt-1  lg:h-[77vh] overflow-y-auto ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mt-1  h-dvh overflow-y-auto ">
           {data.map((item) => (
             <div
               key={item.id}
-              className={`flex flex-col  rounded-lg shadow-2xl p-1.5 lg:p-2   cursor-pointer ${item.id === 2 ? 'text-white bg-gradient-to-br from-[#D62164] to-[#6E3887] ' : 'bg-white'}`}
+              className={`flex flex-col  rounded-lg shadow-sxl p-1.5 lg:p-2   cursor-pointer ${item.id === 2 ? 'text-white bg-gradient-to-br from-[#D62164] to-[#6E3887] ' : 'bg-white'}`}
             >
               <img
                 src={food}
